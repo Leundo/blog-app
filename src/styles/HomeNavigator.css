@@ -1,0 +1,30 @@
+.home-navigator {
+    margin-top: 100px;
+    min-width: 100%;
+}
+
+@media (min-width: 950px) {
+    .home-navigator {
+        min-width: 200px;
+        border-left: 1px solid #ddd;
+        
+        margin-top: 0;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-navigator {
+        min-width: 350px;
+        border-left: 1px solid #ddd;
+    
+        margin-top: 0;
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 950px) and (prefers-color-scheme: dark) { 
+    .home-navigator {
+        border-left: 1px solid var(--dark-border-color);
+    }
+}

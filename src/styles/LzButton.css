@@ -1,0 +1,28 @@
+.lz-button {
+    align-items: center;
+    line-height: 30px;
+    color: #414141;
+    background-color: #FFF;
+
+    border: none;
+
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+    font-size: 16.8px;
+}
+
+.lz-button:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+@media (prefers-color-scheme: dark) { 
+    .lz-button {
+        color: var(--dark-bright-color);
+        background-color: var(--dark-background-color);
+    }
+
+    .lz-button:hover {
+        background-color: rgb(46, 50, 56);
+    }
+
+}

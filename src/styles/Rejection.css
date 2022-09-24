@@ -1,0 +1,40 @@
+.rejection {
+    margin-bottom: 2rem;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0.3rem;
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+    color: var(--light-bright-color);
+
+    /* height: 300px; */
+}
+
+.rejection .rejection-title {
+    padding-top: 30px;
+}
+
+.rejection .rejection-content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.rejection .rejection-title h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 8px;
+    line-height: 40px;
+}
+
+.rejection .rejection-content h4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 25px;
+    margin-top: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .rejection {
+        color: var(--dark-bright-color);
+        background-color: rgb(42, 50, 54);
+    }
+}

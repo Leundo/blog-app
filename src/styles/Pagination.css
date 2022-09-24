@@ -1,0 +1,44 @@
+.lzzet-pagination button {
+    margin: 0 4px;
+    align-items: center;
+    line-height: 30px;
+    color: #414141;
+    background-color: #FFF;
+
+    border: none;
+    /* cursor: pointer; */
+
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+}
+
+.lzzet-pagination .action {
+    height: 30px;
+}
+
+.lzzet-pagination .number {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.lzzet-pagination button:hover, .lzzet-pagination .curr {
+    background-color: rgb(238, 238, 238);
+}
+
+.lzzet-pagination .hidden {
+    display: none;
+    pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) { 
+    .lzzet-pagination button {
+        color: var(--dark-bright-color);
+        background-color: var(--dark-background-color);
+    }
+
+    .lzzet-pagination button:hover, .lzzet-pagination .curr {
+        background-color: rgb(46, 50, 56);
+    }
+
+}

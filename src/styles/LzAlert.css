@@ -1,0 +1,40 @@
+.lz-alert {
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+    color: var(--light-bright-color);
+
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 4px 20px 4px 20px;
+    text-align: center;
+}
+
+.lz-alert.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.lz-alert.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.lz-alert.none {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .lz-alert {
+        color: var(--dark-bright-color);
+    }
+
+    .lz-alert.success {
+        background-color: rgb(56, 72, 62);
+        border-color: rgb(76, 92, 82);
+    }
+
+    .lz-alert.error {
+        background-color: rgb(72, 62, 62);
+        border-color: rgb(92, 82, 82);
+    }
+}

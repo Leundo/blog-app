@@ -1,0 +1,81 @@
+.lz-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+}
+
+.lz-modal.open {
+    opacity: 100;
+    pointer-events: visible;
+}
+
+.lz-modal .lz-modal-content {
+    width: 80%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+}
+
+.lz-modal .lz-modal-header,
+.lz-modal .lz-modal-footer {
+    padding: 10px;
+}
+
+.lz-modal .lz-modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lz-modal .lz-modal-button {
+    margin-right: 20px;
+    width: 80px;
+}
+
+.lz-modal .lz-modal-title {
+    margin-left: 8px;
+    color: var(--light-bright-color);
+}
+
+.lz-modal .lz-modal-body {
+    padding: 10px;
+    border-top: 1px solid var(--light-border-color);
+    border-bottom: 1px solid var(--light-border-color);
+}
+
+.lz-modal .lz-modal-body p {
+    margin-left: 8px;
+    font-size: 16.8px;
+    color: var(--light-bright-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .lz-modal .lz-modal-content {
+        background-color: var(--dark-background-color);
+    }
+
+    .lz-modal .lz-modal-title {
+        color: var(--dark-bright-color);
+    }
+
+    .lz-modal .lz-modal-body {
+        border-color: var(--dark-border-color);
+    }
+
+    .lz-modal .lz-modal-body p {
+        color: var(--dark-bright-color);
+    }
+}

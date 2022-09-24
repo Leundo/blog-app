@@ -1,0 +1,45 @@
+.cert-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+}
+
+.cert-form .div-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.lz-certform-input {
+    margin-bottom: 16px;
+}
+
+.lz-certform-input .text {
+    font-size: 16px;
+}
+
+.lz-certform-input .content {
+    font-size: 21px;
+    width: 250px;
+    height: 30px;
+}
+
+.lz-certform-button {
+    width: 290px;
+    height: 32px;
+}
+
+.cert-form-alert {
+    margin-top: 20px;
+    width: 290px;
+    font-size: 16.8px;
+}

@@ -1,0 +1,48 @@
+.blog-footer {
+    width: 100%;
+
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 100px;
+
+    font-size: 0.8em;
+    font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+
+    color: var(--light-dim-color);
+}
+
+.blog-footer .author {
+    color: var(--light-bright-color);
+}
+
+.blog-footer .copyright a {
+    color: var(--light-bright-color);
+}
+
+.blog-footer .record a {
+    color: var(--light-dim-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .blog-footer {
+        color: var(--dark-dim-color);
+    }
+
+    .blog-footer .author {
+        color: var(--dark-bright-color);
+    }
+    
+    .blog-footer .copyright a {
+        color: var(--dark-bright-color);
+    }
+    
+    .blog-footer .record a {
+        color: var(--dark-dim-color);
+    }
+}

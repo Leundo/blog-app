@@ -1,0 +1,37 @@
+.lz-input {
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+}
+
+.lz-input .content {
+    border: #ccc 1px solid;
+    border-radius: 4px;
+}
+
+/* rgb(163, 80, 64) */
+
+.lz-input .content:focus {
+    border-color: rgb(163, 80, 64);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(204 134 120 / 60%);
+}
+
+.lz-input p {
+    color: var(--light-bright-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .lz-input p {
+        color: var(--dark-bright-color);
+    }
+
+    .lz-input input {
+        background-color: rgb(37, 37, 37);
+        /* border-color: var(--dark-border-color); */
+        color: var(--dark-bright-color);
+    }
+
+    .lz-input .content {
+        border-color: var(--dark-border-color);
+    }
+}

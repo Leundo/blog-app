@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400&family=Noto+Serif+JP:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+:root {
+  --dark-background-color: rgb(25, 25, 25);
+  --dark-bright-color: rgb(193, 193, 193);
+  --dark-dim-color: rgb(125, 125, 125);
+  --dark-border-color: rgb(57, 57, 57);
+
+  --light-bright-color: #414141;
+  --light-dim-color: rgb(125, 125, 125);
+  --light-border-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-size: 20px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--dark-background-color);
+  }
+  body {
+    background-color: var(--dark-background-color);
+  }
+}
+
+@media (min-width: 600px) {
+  .app {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}

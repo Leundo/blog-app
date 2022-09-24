@@ -1,0 +1,47 @@
+.article-header {
+    width: 80%;
+    margin: 80px auto 120px;
+    min-height: 85px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: #414141;
+
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+}
+
+.article-header .title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.article-header .meta {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+}
+
+.article-header .meta-text {
+    margin: 0 1px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) { 
+    .article-header {
+        color: var(--dark-bright-color)
+    }
+}

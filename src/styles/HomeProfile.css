@@ -1,0 +1,118 @@
+.home-profile {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif JP', serif;
+
+    padding-top: 20px;
+}
+
+.home-profile .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.home-profile .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #414141;
+}
+
+.home-profile .intro {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(125, 125, 125);
+    width: 90%;
+}
+
+.home-profile .title {
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #414141;
+    width: 90%;
+}
+
+.home-profile .article-list {
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 30px;
+    width: 90%;
+
+    padding-bottom: 50px;
+
+    border-top: 1px solid #ddd;
+}
+
+.home-profile .article-list a {
+    color: #414141;
+}
+
+@media (min-width: 950px) {
+    .home-profile .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .home-profile .intro {
+        width: 160px;
+    }
+
+    .home-profile .title {
+        width: 160px;
+    }
+
+    .home-profile .article-list {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-profile .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-profile .intro {
+        width: 280px;
+    }
+
+    .home-profile .title {
+        width: 280px;
+    }
+
+    .home-profile .article-list {
+        width: 280px;
+    }
+}
+
+@media (prefers-color-scheme: dark) { 
+    .home-profile .name {
+        color: var(--dark-bright-color);
+    }
+
+    .home-profile .intro {
+        color: var(--dark-dim-color);
+    }
+
+    .home-profile .title {
+        color: var(--dark-bright-color);
+    }
+
+    .home-profile .article-list a {
+        color: var(--dark-bright-color);
+    }
+
+    .home-profile .article-list { 
+        border-top: 1px solid var(--dark-border-color);
+    }
+}
